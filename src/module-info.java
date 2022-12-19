@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author nickjones
- *
- */
-module nicksiliconmtntrainings {
-}
