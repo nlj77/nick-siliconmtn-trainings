@@ -18,12 +18,16 @@ public class Excercise1 {
 	public static void main(String[] args) {
 		/**
 		 * @params x, y, z, n creates an instance of a primitive int, double, float, and char.
+		 * @params isMathFun creates an instance of a boolean
 		 */
 		int x = 5;
 		double y = 3.65;
 		float z = 5.56f;
 		char n = 'n';
 		boolean isMathFun = true;
+		/**
+		 * Prints out each instance, per the exercise instructions.
+		 */
 		System.out.println(x);
 		System.out.println(y);
 		System.out.println(z);
