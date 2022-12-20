@@ -21,6 +21,7 @@ import java.util.*;
  ****************************************************************************/
 
 public class Stack {
+	
 	/*
 	 * Declare a private variable of the class Vector, called items
 	 */
@@ -36,10 +37,12 @@ public class Stack {
 		
 		items = new Vector(10);
 	}
+	
 	/*
 	 * Creates a method to add a object to the instances of item, called push
 	 * addElement is a method of the Vector class. Object is used because it returns an instance of an object.
 	 */
+	
 	public Object push(Object item) {
 		
 		items.addElement(item);
@@ -58,11 +61,14 @@ public class Stack {
 		
 	}
 	
+	/* 
+	 * this method demonstrates method overloading, by using the same name as the last method, but with a double return type, thus not breaking anything
+	 */
+	
 	static double plusMethod(double x, double y) {
 		
 		return x + y;
 		
 	}
 	
-
 }
