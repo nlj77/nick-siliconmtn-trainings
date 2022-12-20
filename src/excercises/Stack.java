@@ -93,7 +93,9 @@ public class Stack {
 	 */
 	
 	public static void main(String[] args) {
+		
 		Stack stack1 = new Stack();
+		
 		System.out.println("Items empty status: " + stack1.isEmpty());
 	}
 }
