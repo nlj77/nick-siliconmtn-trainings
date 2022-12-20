@@ -1,6 +1,6 @@
 package excercises;
 /****************************************************************************
- * <b>Title:</b> Example1.java
+ * <b>Title:</b> Exercise2.java
  * <b>Project:</b> nicksiliconmtntrainings
  * <b>Description:</b> Exercise 2, 
  * This task, asks me to write methods to print the numbers 1 through 10, 10 descending to 1, and
