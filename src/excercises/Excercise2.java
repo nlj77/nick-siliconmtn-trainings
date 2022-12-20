@@ -29,7 +29,5 @@ public class Excercise2 {
 		tenToZero();
 		System.out.println("------------------");
 		oneToTwentyEven();
-		
-	
 	}
 }
