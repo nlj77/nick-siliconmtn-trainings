@@ -98,6 +98,7 @@ public class Stack {
 		
 		System.out.println("Items empty status: " + stack1.isEmpty());
 	}
+	
 }
 
 
