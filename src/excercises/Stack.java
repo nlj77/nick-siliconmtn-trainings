@@ -6,6 +6,7 @@ package excercises;
  * Vector requires java.util.* package
  */
 import java.util.*;
+
 /****************************************************************************
  * <b>Title:</b> Stack.java
  * <b>Project:</b> nicksiliconmtntrainings
