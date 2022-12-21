@@ -44,6 +44,7 @@ public class StateMap {
 		orderedMap.descendingMap();
 
 	}
+	
 	/*
 	 * creates a class method that takes a map, and iterates through it, printing the keys and values
 	 */
