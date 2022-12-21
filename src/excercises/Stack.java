@@ -24,8 +24,20 @@ import java.util.*;
 public class Stack {
 
 	/*
-	 * Declare a private variable of the class Vector, called items
+	 * This is our main entry method for Java, this declares a new stack object, and
+	 * then prints to the console the result of the isEmpty method for the stack1
+	 * object. Because we use a constructor, we know that by default a stack object
+	 * has 10 items of the Vector class
 	 */
+	public static void main(String[] args) {
+
+		Stack stack1 = new Stack();
+
+		System.out.println("Items empty status: " + stack1.isEmpty());
+	}
+
+	
+	// Declare a private variable of the class Vector, called items	 
 
 	private Vector items;
 
@@ -84,29 +96,10 @@ public class Stack {
 	public boolean isEmpty() {
 
 		if (items.size() == 0)
-
 			return true;
 
 		else
-
 			return false;
 	}
 
-	/*
-	 * This is our main entry method for Java, this declares a new stack object, and
-	 * then prints to the console the result of the isEmpty method for the stack1
-	 * object. Because we use a constructor, we know that by default a stack object
-	 * has 10 items of the Vector class
-	 */
-
-	public static void main(String[] args) {
-
-		Stack stack1 = new Stack();
-
-		System.out.println("Items empty status: " + stack1.isEmpty());
-	}
-
 }
-
-
-
