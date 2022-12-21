@@ -1,8 +1,11 @@
 /**
- * 
+ * JDK 11
  */
 package excercises;
 import java.util.HashMap; // import the HashMap class
+import java.util.Map.Entry;
+import java.util.*; // import the TreeMap class
+import java.util.stream.Collectors;
 /****************************************************************************
  * <b>Title:</b> StateMap.java
  * <b>Project:</b> nicksiliconmtntrainings
@@ -20,26 +23,57 @@ public class StateMap {
 	 * @param args main runner for my StateMap class
 	 */
 	public static void main(String[] args) {
-		// Creates a HasMap object called States and assigns it to a 50 length Hashmap
+		// Creates a HashMap object called States and assigns it to a 50 length Hashmap
 		// of key value pairs
-		final HashMap<String, String> States = new HashMap<String, String>(50);
-		/**
-		 * Calls addStates method on the States Hashmap
-		 */
+		final HashMap<Integer, String> States = new HashMap<Integer, String>();
+
+		// Calls addStates method on the States Hashmap
+
 		addStates(States);
+
+		// prints the values, and keys of States Hashmap
+		System.out.println(States.values());
+		System.out.println(States.keySet());
+
+		TreeMap orderedMap = orderMap(States);
+
+		iterateUsingEntrySet(States);
+
+		iterateUsingEntrySet(orderedMap);
 		
+		orderedMap.descendingMap();
+
+	}
+
+	public static void iterateUsingEntrySet(Map<Integer, String> map) {
+		for (Map.Entry<Integer, String> entry : map.entrySet()) {
+			System.out.println(entry.getKey() + ":" + entry.getValue());
+		}
+	}
+
+	/*
+	 * this function takes a hashmap and orders it
+	 */
+	public static TreeMap orderMap(HashMap x) {
+		TreeMap sortedMap = new TreeMap(x);
+		return sortedMap;
 	}
 	
-	public static void addStates(HashMap<String, String> x) {
-		x.put("01", "Alabama");
-		x.put("02", "Alaska");
-		x.put("04", "Arizona");
-		x.put("06", "California");
-		x.put("08", "Colorado");
-		x.put("09", "Conneticut");
-		x.put("10", "Delaware");
-		x.put("15", "Hawaii");
-		x.put("48", "Texas");
-		x.put("39", "Ohio");
+
+	/**
+	 * @param x is a Hashmap that accepts a String, and String, set for a key value
+	 * 
+	 */
+	public static void addStates(HashMap<Integer, String> x) {
+		x.put(1, "Alabama");
+		x.put(2, "Alaska");
+		x.put(4, "Arizona");
+		x.put(6, "California");
+		x.put(8, "Colorado");
+		x.put(9, "Conneticut");
+		x.put(10, "Delaware");
+		x.put(15, "Hawaii");
+		x.put(48, "Texas");
+		x.put(39, "Ohio");
 	}
 }
