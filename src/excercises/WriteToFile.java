@@ -19,15 +19,42 @@ import java.io.IOException; //Import the exception handler
  * @updates:
  ****************************************************************************/
 public class WriteToFile {
+	
 	public static void main(String[] args) {
+		/*
+		 * This tries to create a new FileWriter object called myWriter which takes an argument of filename.txt
+		 */
 		try {
 			FileWriter myWriter = new FileWriter("filename.txt");
+			
+			/*
+			 * this calls the built in write method from the FileWriter class, and passes in the argument as a string of 'Files in Java might be tricky but this is fun'
+			 */
+			
 			myWriter.write("Files in Java might be tricky, but this if fun!");
+			
+			/*
+			 * best practice to call the close function
+			 */
+			
 			myWriter.close();
+			
+			/*
+			 * uses sysout to print 'successfully wrote to the file
+			 */
+			
 			System.out.println("Successfully wrote to the file!");
+			
+			/*
+			 * runs a catch, which is why we imported our exception handler package, to print 'an error has occurred if some other error shows
+			 */
+			
 		} catch (IOException e) {
+			
 			System.out.println("An error occured.");
+			
 			e.printStackTrace();
+			
 		}
 	}
 
