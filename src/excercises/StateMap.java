@@ -40,11 +40,13 @@ public class StateMap {
 		iterateUsingEntrySet(States);
 
 		iterateUsingEntrySet(orderedMap);
-		
+
 		orderedMap.descendingMap();
 
 	}
-
+	/*
+	 * creates a class method that takes a map, and iterates through it, printing the keys and values
+	 */
 	public static void iterateUsingEntrySet(Map<Integer, String> map) {
 		for (Map.Entry<Integer, String> entry : map.entrySet()) {
 			System.out.println(entry.getKey() + ":" + entry.getValue());
@@ -58,7 +60,6 @@ public class StateMap {
 		TreeMap sortedMap = new TreeMap(x);
 		return sortedMap;
 	}
-	
 
 	/**
 	 * @param x is a Hashmap that accepts a String, and String, set for a key value
